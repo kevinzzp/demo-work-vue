@@ -1,0 +1,90 @@
+$fontSize:.12rem;
+$fontFamily:Arial;
+html {
+    font-size: 625%;
+}
+
+body {
+    font-size: $fontSize;
+    background: #F5F5F5;
+    font-family: $fontFamily;
+    margin: 0;
+}
+
+h1 {
+    font-size: .32rem
+}
+
+h2 {
+    font-size: $fontSize * 2
+}
+
+h3 {
+    font-size: .1872rem
+}
+
+h4 {
+    font-size: .16rem
+}
+
+h5 {
+    font-size: .1328rem
+}
+
+h6 {
+    font-size: $fontSize
+}
+
+p {
+    fonr-size: .16rem
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.clearfix {
+    &:after {
+        clear: both;
+        content: '.';
+        display: block;
+        height: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+    *height: 1%;
+}
+
+//重置ui样式库
+.mint-cell-wrapper {
+    background-image: none;
+}
+
+.page-range .page-range-header {
+    color: #777777;
+    padding: .35rem .10rem 0 .10rem;
+}
+
+.necessary_info .mint-cell-text {
+    position: relative;
+    &::before {
+        content: '*';
+        position: absolute;
+        right: -.1rem;
+        top: .05rem;
+        color: red;
+        font-size: .16rem;
+        font-weight: 500;
+    }
+}
+
+input::-webkit-input-placeholder {
+    color: #CCCCCC;
+    font-family: $fontFamily;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #CCCCCC;
+    font-family: $fontFamily;
+    padding-left: .02rem;
+}
